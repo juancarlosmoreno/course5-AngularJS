@@ -1,26 +1,21 @@
-<!doctype html>
-	<html lang="es">
-	<head>
-		<!-- Realizado por juancarlos.jcm@gmail.com -->
-		<meta charset="utf-8">
-		<title>JCM's first AJS page.</title>
-		<script type="text/javascript" src="js/script.js"></script>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  version 1.12 -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>   version 3.0  -->
-		<!-- <style>  meter aquí el/los fichero/s .CSS que vayas a utilizar   </style> -->
-		<script>
-		 
-  		</script>
-	</head>
-	<body>
-		<h1>Module1: Hello Coursera Students!</h1>
-		<!-- escribe aquí tu código HTML -->
-		<p> <cite> A Brief History of Time</cite> by Stephen Hawking has sold over ten million copies worldwide!</p>
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lecture05: My first AngularJS App</title>
+  </head>
+  <body>
+    <h1><u>Lecture05:</u> My first AngularJS App!!</h1>
+    <div ng-controller="MyFirstController">
+      {{sayHello()}}
+      <hr>
+      <input type="text" ng-model="name">
+      Inside my input is: {{name}}
+    </br>
+     ¿Dónde estará Pedro?: {{taller}}
 
-		<!-- <script>
-		  ... código JavaScript aquí ...
-  		</script> -->
-
-	</body>
+    </div>
+  </body>
 </html>
