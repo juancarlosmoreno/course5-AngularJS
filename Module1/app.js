@@ -10,6 +10,11 @@ angular.module('LunchCheck', [])
   $scope.totalValueFail2 = "";
 
   $scope.displayNumeric = function () {
+  // antes de cada click, pongo a cero los diversos valores 
+  $scope.totalValueOk = "";
+  $scope.totalValueFail1 = "";
+  $scope.totalValueFail2 = "";
+
     var msg = calculatNumericForString($scope.name);
     if(msg == 1){
        $scope.totalValueOk = "Enjoy!";
